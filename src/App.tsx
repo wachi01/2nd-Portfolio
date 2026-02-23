@@ -159,8 +159,16 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-4" : "py-6"}`}>
       <div className="container mx-auto px-6">
         <div className={`glass rounded-2xl px-8 py-4 flex items-center justify-between transition-all ${isScrolled ? "bg-white/60" : "bg-white/40"}`}>
-          <div className="text-2xl font-black tracking-tighter text-secondary">
-            Elewachi<span className="text-primary">.</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://storage.googleapis.com/static-content-prod/606c6e7e-3b1a-4b1a-8b1a-8b1a8b1a8b1a/hero-image.png" 
+              alt="Elewachi Emmanuel" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-primary/20"
+              referrerPolicy="no-referrer"
+            />
+            <div className="text-2xl font-black tracking-tighter text-secondary">
+              Elewachi<span className="text-primary">.</span>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -169,9 +177,14 @@ const Navbar = () => {
             <a href="#experience" className="font-semibold hover:text-primary transition-colors">Experience</a>
             <a href="#stack" className="font-semibold hover:text-primary transition-colors">Stack</a>
             <a href="#projects" className="font-semibold hover:text-primary transition-colors">Projects</a>
-            <button className="bg-primary text-white px-6 py-2.5 rounded-xl font-bold hover:bg-orange-600 transition-all shadow-lg shadow-primary/20">
+            <a 
+              href="https://cal.com/elewachi/deep-healing-massage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary text-white px-6 py-2.5 rounded-xl font-bold hover:bg-orange-600 transition-all shadow-lg shadow-primary/20"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
 
           <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -195,7 +208,15 @@ const Navbar = () => {
               <a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold p-2">Experience</a>
               <a href="#stack" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold p-2">Stack</a>
               <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold p-2">Projects</a>
-              <button className="bg-primary text-white w-full py-3 rounded-xl font-bold">Contact Us</button>
+              <a 
+                href="https://cal.com/elewachi/deep-healing-massage"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="bg-primary text-white w-full py-3 rounded-xl font-bold text-center"
+              >
+                Contact Us
+              </a>
             </div>
           </motion.div>
         )}
@@ -238,9 +259,14 @@ export default function App() {
                   AI Automation Specialist building intelligent workflows and automation systems that drive operational efficiency.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <button className="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95">
+                  <a 
+                    href="https://cal.com/elewachi/deep-healing-massage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 text-center"
+                  >
                     Hire Me
-                  </button>
+                  </a>
                   <div className="flex items-center gap-4 px-6 py-4">
                     <div className="flex -space-x-3">
                       {[1, 2, 3].map(i => (
@@ -287,7 +313,7 @@ export default function App() {
                 <div className="relative w-full aspect-square max-w-[500px] mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full animate-pulse" />
                   <img 
-                    src="https://picsum.photos/seed/elewachi/600/600" 
+                    src="https://storage.googleapis.com/static-content-prod/606c6e7e-3b1a-4b1a-8b1a-8b1a8b1a8b1a/hero-image.png" 
                     alt="Elewachi Emmanuel" 
                     className="relative z-10 w-full h-full object-cover rounded-[40px] shadow-2xl"
                     referrerPolicy="no-referrer"
@@ -563,9 +589,14 @@ export default function App() {
                 Schedule a free discovery call today.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <button className="w-full sm:w-auto bg-primary text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-orange-600 transition-all shadow-2xl shadow-primary/30">
+                <a 
+                  href="https://cal.com/elewachi/deep-healing-massage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto bg-primary text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-orange-600 transition-all shadow-2xl shadow-primary/30 text-center"
+                >
                   Get Started Now
-                </button>
+                </a>
                 <button className="w-full sm:w-auto bg-white text-secondary px-12 py-5 rounded-2xl font-bold text-xl border-2 border-gray-100 hover:bg-gray-50 transition-all">
                   View My Work
                 </button>
@@ -596,9 +627,14 @@ export default function App() {
 
       {/* Sticky CTA (Mobile) */}
       <div className="md:hidden fixed bottom-6 left-6 right-6 z-40">
-        <button className="w-full bg-primary text-white py-4 rounded-2xl font-bold shadow-2xl shadow-primary/40 flex items-center justify-center gap-2">
+        <a 
+          href="https://cal.com/elewachi/deep-healing-massage"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full bg-primary text-white py-4 rounded-2xl font-bold shadow-2xl shadow-primary/40 flex items-center justify-center gap-2"
+        >
           Hire Me Now <ArrowRight className="w-5 h-5" />
-        </button>
+        </a>
       </div>
 
       <ProjectModal 
